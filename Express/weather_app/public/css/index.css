@@ -1,0 +1,28 @@
+body
+{
+text-align: center;
+background-image:url('/images/thunder.gif');
+background-size:1300px 700px;
+}
+.div1{
+
+  height: 100px;
+  width: 200px;
+  background-color:rgba(255, 255, 255, 0.7);
+  position: relative;
+  left:30px;
+  margin-top:300px;
+}
+h1
+{
+  font-style: normal;
+  font-family: monospace;
+  color: #eeeeee;
+  font-size: 50px
+}
+.font
+{
+  color:#7c3c21;
+  font-family: serif;
+  font-size: 20px;
+}
