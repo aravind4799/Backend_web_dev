@@ -1,0 +1,35 @@
+<!-- EJS Is a html file with marker tag that get changed dynamically set by your server
+here KindOfDay is the marker. which is get by the server at the time of render -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div class="box" id="heading">
+      <h1><%= title %> </h1>
+    </div>
+
+      <!-- this line displays the entire array, but we need every item added as a seperated bullet
+      <li> <%= todoitem %> </li> -->
+<div class="box">
+  <%for(var i=0;i<todoitem.length;i++){ %>
+    <div class="item">
+      <input type="checkbox">
+      <p><%= todoitem[i] %></p>
+    </div>
+  <%}%>
+
+      <!-- <% %> are scriplet tags used to run simple conditional statements in ejs/html
+      it works line by line ,so every line needs to be within <% %> if it isn't html %> %> -->
+    <form  class="item"action="/" method="post">
+      <!-- set autocomplete to off .. to avoid autocomplete -->
+      <input type="text" name="todoitem" placeholder="ToDo task" autocomplete="off">
+      <button type="submit" name="button" value=<%= title %>>+</button>
+    </form>
+  </div>
+  </body>
+</html>
