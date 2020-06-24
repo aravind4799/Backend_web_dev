@@ -1,0 +1,39 @@
+db.products.insertMany([
+{
+_id:1,
+name:"pencil",
+price:1.20,
+stock:32,
+reviews:[
+  {
+   author_name:"aravind",
+   ratings:5,
+   comment:"best ever!"
+  },
+  {
+   author_name:"poorani",
+   ratings:1,
+   comment:"worst ever!"
+  }
+]
+},
+
+{
+_id:2,
+name:"rubber",
+price:0.80,
+stock:12,
+reviews:[
+  {
+   author_name:"its_me",
+   ratings:5,
+   comment:"best ever!"
+  },
+  {
+   author_name:"its_you",
+   ratings:1,
+   comment:"worst ever!"
+  }
+]
+}]
+);

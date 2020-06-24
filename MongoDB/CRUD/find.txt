@@ -1,0 +1,15 @@
+// to find a particular document in a collection for created database.
+
+> db.products.find()
+
+//displays all the collections
+
+>db.products.find({_id:1} , {name:1,_id:0});
+
+// first parameter:(a JSON object) filter -searches all collections to find document with _id:1
+// second parameter:(a JSON object) projection - only displays those fields whose value is set to 1(True)
+                    and ignores the one set to 0(False), if this parameter is not specified it displays
+                    entire document matching the query
+
+>db.products.find({_id:2, price:{$gt:1}} ,{name:1,_id:0} );
+                    

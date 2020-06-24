@@ -1,0 +1,5 @@
+>show dbs;
+
+//to create a db and to use it,
+
+>use products;
